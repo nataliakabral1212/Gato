@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TableroBoton" parent="Widget.AppCompat.Button">
+        <item name="android:background">#F48FB1</item>
+        <item name="backgroundTint">#B83D67</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:shape">rectangle</item>
+    </style>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8BBD0"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvPlayerO"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jugador O"
+            android:textColor="#C1164F"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvPlayerX"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Jugador X"
+            android:textColor="#C1164F"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/etPlayer1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Jugador 1..."
+            android:background="@drawable/estiloedt"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="#BF164E"
+            android:textColorHint="#BF164E"
+            android:layout_marginEnd="8dp"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/etPlayer2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Jugador 2..."
+            android:background="@drawable/estiloedt"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="#BF164E"
+            android:textColorHint="#BF164E"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empezar"
+        android:backgroundTint="#DB507F"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/TableroBoton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Turno de:"
+            android:textColor="#C1164F"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/etTurn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nombre jugador..."
+            android:background="@drawable/estiloedt"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="#BF164E"
+            android:textColorHint="#BF164E" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRendirseCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#D81B60"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="¡Rendición en curso! Faltan 5 clics (0/5)" />
+
+    <Button
+        android:id="@+id/btnRendirse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rendirse"
+        android:backgroundTint="#DB507F"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>
+
